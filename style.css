@@ -1,0 +1,358 @@
+/* Introduction Section */
+.introduction {
+  display: flex;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.intro-text {
+  flex: 2;
+  padding-right: 20px;
+  text-align: center;
+  margin: 8px;
+}
+.intro-text button {
+  margin: calc(1.2 * 8px); /* Increase by 20%  Mxolisi Masina*/
+}
+
+.intro-text h2 {
+  font-size: 36px;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: right;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.contact-info1 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.contact-info i {
+  margin-right: 8px;
+}
+
+/*.about-image {
+    
+    left: -50px; /* Aligns the image to the left */
+/*top: 10px; /* You can adjust this value as needed */
+/*width: -1000px; /* Adjust width as needed */
+/*height: 10px;
+    border-radius: 10px;
+} */
+
+/* About Me Section */
+.about-me {
+  padding: 50px;
+  background-color: #f1f1f1;
+}
+
+.about-me h2 {
+  font-size: 32px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skills div {
+  flex: 1;
+  padding: 10px;
+}
+
+.skills ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.intro-image2 {
+  flex: 1;
+  position: relative;
+  text-align: right;
+  top: -550px;
+  width: auto;
+}
+
+.intro-image2 img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: -550px;
+  margin-right: 100px;
+}
+
+/* Reviews Section */
+#reviews {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 32px;
+}
+
+.reviews-content {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.column1 {
+  width: 130%; /* Adjust width as needed */
+  text-align: left;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+}
+
+/* Footer */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mxolisi Masina Code */
+
+.download-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-btn:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.download-btn:active {
+  transform: scale(1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  --color1: #fff;
+  --color2: #181818;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color2);
+  padding: 12px 20px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.Logo {
+  text-align: left;
+
+  padding: 10px;
+
+  max-width: 80px;
+
+  list-style-type: none;
+}
+
+.Logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color1);
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+.references {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.reference {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+.reference strong {
+  display: block;
+}
+@media (max-width: 610px) {
+  .introduction,
+  .skills,
+  .container1 {
+    display: inline-block;
+  }
+  .intro-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .intro-image2 {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  .references {
+    display: inline-block;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .reference {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  .reference strong {
+    display: block;
+  }
+}
